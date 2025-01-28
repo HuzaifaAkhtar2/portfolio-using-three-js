@@ -47,7 +47,7 @@ const moon = new THREE.Mesh(
   })
 )
 
-scene.add(moon)
+scene.add(moon);
 
 const earthTexture = new THREE.TextureLoader().load("/public/earth.jpg")
 
@@ -59,7 +59,7 @@ const earth = new THREE.Mesh(
   })
 )
 
-scene.add(earth)
+scene.add(earth);
 
 moon.position.z = 30
 moon.position.setX(-10)
