@@ -28,7 +28,7 @@ pointLight.position.set(20, 30, 0)
 const ambientLight = new THREE.AmbientLight(0xffffff)
 scene.add(pointLight, ambientLight)
 
-const imageTexture = new THREE.TextureLoader().load("/public/photo.png")
+const imageTexture = new THREE.TextureLoader().load("photo.png")
 
 const image = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
@@ -36,8 +36,8 @@ const image = new THREE.Mesh(
 )
 scene.add(image)
 
-const moonTexture = new THREE.TextureLoader().load("/public/moon.jpg")
-const normalTexture = new THREE.TextureLoader().load('/public/normal.jpg')
+const moonTexture = new THREE.TextureLoader().load("moon.jpg")
+const normalTexture = new THREE.TextureLoader().load('normal.jpg')
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -49,7 +49,7 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
-const earthTexture = new THREE.TextureLoader().load("/public/earth.jpg")
+const earthTexture = new THREE.TextureLoader().load("earth.jpg")
 
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(6, 32, 32),
